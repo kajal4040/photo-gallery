@@ -1,0 +1,31 @@
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.photo-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 12px #aaa;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 16px #888;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.photo-card p {
+    font-size: 14px;
+    color: #333;
+}
